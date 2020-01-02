@@ -1,8 +1,8 @@
 type BriqIndx = u32;
 
 enum Briq {
-    Eval { appl: BriqIndx },
-    Appl { tape: BriqIndx, schm: BriqIndx },
+    Kick { eval: BriqIndx },
+    Eval { tape: BriqIndx, schm: BriqIndx },
     Tape(Vec<BriqIndx>),
     Schm(Vec<BriqIndx>),    
 }
